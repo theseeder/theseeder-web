@@ -58,7 +58,7 @@
     function getRouterStatus() {
       $http({
         method: 'GET',
-        url: `https://${vm.baseUrl}/status/router`
+        url: 'https://' + vm.baseUrl + '/status/router'
       }).then(function successCallback(response) {
         vm.spinner.router = false;
         response.data.modified = moment(response.data.modified).fromNow();
@@ -71,7 +71,7 @@
     function getNodeStatus() {
       $http({
         method: 'GET',
-        url: `https://${vm.baseUrl}/status/node`
+        url: 'https://' + vm.baseUrl + '/status/node'
       }).then(function successCallback(response) {
         vm.spinner.node = false;
         response.data.modified = moment(response.data.modified).fromNow();
@@ -84,7 +84,7 @@
     function getSOLimits() {
       $http({
         method: 'GET',
-        url: `https://${vm.baseUrl}/limits/so`
+        url: 'https://' + vm.baseUrl + '/limits/so'
       }).then(function successCallback(response) {
         vm.spinner.limits = false;
         response.data.modified = moment(response.data.modified).fromNow();

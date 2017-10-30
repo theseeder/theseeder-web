@@ -43,7 +43,7 @@
         function getPaypalBalance() {
           $http({
             method: 'GET',
-            url: `https://${vm.baseUrl}/balance/paypal`
+            url: 'https://' + vm.baseUrl + '/balance/paypal'
           }).then(function successCallback(response) {
             response.data.modified = moment(response.data.modified).fromNow();
             vm.balance.paypal = response.data;

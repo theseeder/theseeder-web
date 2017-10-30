@@ -42,7 +42,7 @@
         function getAuthorized () {
           $http({
             method: 'GET',
-            url: `https://${vm.baseUrl}/access`
+            url: 'https://' + vm.baseUrl + '/access'
           }).then(function successCallback(response) {
             vm.access = response.data;
             if (vm.access.authorized) {
