@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/html" ng-app="theSeederApp">
+<head lang="en">
+    <meta charset="utf-8">
+    <title update-title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+          integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.8.0/loading-bar.min.css'
+          type='text/css' media='all'/>
+    <link rel="stylesheet" href="web/css/main.css">
+    <base href="/">
+</head>
+<body>
+<header>
+    <nav class="nav-top">
+        <div class="nav-wrapper white">
+            <a class="brand-logo black-text center waves-effect" ui-sref="index">TheSeeder</a>
+            <a href="#" data-activates="slide-out" class="button-collapse black-text show-on-large"><i
+                    class="material-icons">menu</i></a>
+            <ul id="slide-out" class="side-nav">
+                <li><img src="images/logo.png" width="230"></li>
+                <li ui-sref-active="active"><a style="text-align: center;" class="waves-effect" ui-sref="info">Info</a>
+                </li>
+                <li ui-sref-active="active"><a style="text-align: center;" class="waves-effect" ui-sref="howto">How To's</a></li>
+                <li ui-sref-active="active"><a style="text-align: center;" class="waves-effect"
+                                               ui-sref="status">Status</a></li>
+                <li ui-sref-active="active"><a style="text-align: center;" class="waves-effect"
+                                               ui-sref="donate">Donate</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="container">
+        <div ui-view></div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container">
+        <span class="copyright">&copy; 2017 <a ui-sref="index">TheSeeder</a></span>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+        integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-cookies.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.8.0/loading-bar.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js'></script>
+<script src="web/js/theSeederApp/theSeederApp.js"></script>
+<script src="web/js/theSeederApp/controllers/indexCtrl.js"></script>
+<script src="web/js/theSeederApp/controllers/infoCtrl.js"></script>
+<script src="web/js/theSeederApp/controllers/statusCtrl.js"></script>
+<script src="web/js/theSeederApp/controllers/donateCtrl.js"></script>
+<script src="web/js/theSeederApp/controllers/howtoCtrl.js"></script>
+</body>
+</html>

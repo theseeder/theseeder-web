@@ -1,0 +1,90 @@
+<div class="col-md-12">
+    <ul class="collection centered" id="statusList">
+        <li class="collection-item">
+            <p>
+                TheSeeder's router is
+                <span ng-if="statusVm.status.router.online" class="label label-success">online!</span>
+                <span ng-if="statusVm.status.router.online === false" class="label danger">offline!</span>
+                <br><span style="font-size: 80%;">last updated {{statusVm.status.router.modified}}</span>
+            <div id="router-spinner" class="progress" ng-show="statusVm.spinner.router===true">
+                <div class="indeterminate"></div>
+            </div>
+            </p>
+        </li>
+        <li class="collection-item">
+            <p>
+                <span class="tooltipped" data-position="left" data-delay="40"
+                      data-tooltip="proxmox hypervisor">node</span> is
+                <span ng-if="statusVm.status.node.data">
+                    <span class="label label-success">up</span> ({{statusVm.status.node.data.uptime}}), {{statusVm.status.node.data.cpu.usagePercent}} CPU,
+                    {{statusVm.status.node.data.memory.used}} / {{statusVm.status.node.data.memory.total}} RAM
+                    <br>
+                    <div class="childLeft" ng-if="statusVm.status.node.data">
+                        <table class="centered">
+                            <thead>
+                            <tr>
+                                <th data-field="system">system</th>
+                                <th data-field="status">status</th>
+                                <th data-field="cpu-util">cpu</th>
+                                <th data-field="ram-util">ram</th>
+                                <th data-field="net-total-out">uploaded</th>
+                                <th data-field="net-total-in">downloaded</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="system in statusVm.status.node.data.systems track by $index">
+                                    <td>{{system.name}}</td>
+                                    <td ng-if="system.running"><span class="label label-success">running</span></td>
+                                    <td ng-if="!system.running"><span class="label label-danger">stopped</span></td>
+                                    <td>{{system.cpuUsage}}</td>
+                                    <td>{{system.memUsed}}</td>
+                                    <td>{{system.out}}</td>
+                                    <td>{{system.in}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="childLeft" ng-if="statusVm.status.node.data">
+                        <table class="centered">
+                            <thead>
+                                <tr>
+                                    <th data-field="system">datastore</th>
+                                    <th data-field="status">status</th>
+                                    <th data-field="capacity">capacity</th>
+                                    <th data-field="used">used</th>
+                                    <th data-field="avail">available</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="datastore in statusVm.status.node.data.datastores track by $index">
+                                    <td>{{datastore.name}}</td>
+                                    <td ng-if="datastore.online"><span class="label label-success">online</span></td>
+                                    <td ng-if="!datastore.online"><span class="label label-danger">offline</span></td>
+                                    <td>{{datastore.capacity}}</td>
+                                    <td>{{datastore.used}}</td>
+                                    <td>{{datastore.avail}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </span>
+                <span ng-if="!statusVm.status.node.data">
+                    <span class="label label-danger">down</span>
+                </span>
+                <br><span style="font-size: 80%;">last updated {{statusVm.status.node.modified}}</span>
+                <div id="node-spinner" class="progress" ng-show="statusVm.spinner.node===true">
+                    <div class="indeterminate"></div>
+                </div>
+        </li>
+        <li class="collection-item">
+            <p>
+                Current limits: <br>
+                <span ng-if="statusVm.limits.so.data">SO: {{statusVm.limits.so.data.trafficUsed}}GB / 100GB / Daily</span>
+                <br><span style="font-size: 80%;">last updated {{statusVm.limits.so.modified}}</span>
+            <div id="limits-spinner" class="progress" ng-show="statusVm.spinner.limits===true">
+                <div class="indeterminate"></div>
+            </div>
+            </p>
+        </li>
+    </ul>
+</div>

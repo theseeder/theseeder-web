@@ -1,0 +1,240 @@
+<div class="row">
+    <div class="col-md-12">
+        <p></p>
+        <p><b>information to all kinds of things, [Tags] represent the scope:</b></p>
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapse1">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse1">[General] hub info</a>
+                    </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <ul>
+                            <li>adcs://ha-hub.theseeder.ml:56682 - minimum share: 50GB - available to 130.83.0.0/16</li>
+                            <!--<li>dc.newram.eu:40011 - minimum share: 10GB - available to 130.83.0.0/16 - only hostels</li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapse13">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse13">[General] user info</a>
+                    </h4>
+                </div>
+                <div id="collapse13" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <ul>
+                            <li>TheSeeder: 10GB random data, used for <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse10">bot syntax</a>, chat and requests, no restrictions for users</li>
+                            <li>TheSeederBot: online self service bot, shares everything related to that, no restrictions for users</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapse4">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse4">[General] auto-cleanup</a>
+                    </h4>
+                </div>
+                <div id="collapse4" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>the NewFiles folder and the Requests folder are automatically cleaned so only the last month
+                            is available.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapse5">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse5">[General] game servers</a>
+                    </h4>
+                </div>
+                <div id="collapse5" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>none</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapse2">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse2">[TheSeeder] download service</a>
+                    </h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>Send me your links, decrypter links, dlc's, torrents or magnets via bot-syntax or online self service, i will download them. Dlc's and .torrent's are only supported with the online self service.</p>
+                        <p>Supported Hoster:</p>
+                        <ul>
+                            <li>Torrents (unlimited)</li>
+                            <li>Zippyshare (unlimited)</li>
+                            <li>Uploadable (unlimited)</li>
+                            <li>Mega (unlimited)</li>
+                            <li>Uptobox (unlimited)</li>
+                            <li>Uploaded (unlimited)</li>
+                            <li>Share-Online (<b>limited</b>)</li>
+                        </ul>
+                        <p>Current <b>limits</b> can be checked at <a ui-sref="status">here</a>
+                        <p>
+                        <p>Regarding One-Click-Hoster: please check if every part is online from at least one
+                            hoster.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapse3">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse3">[TheSeeder] auto-download</a>
+                    </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>All magnets and urls sent via pm with the correct <a
+                                data-toggle="collapse" data-parent="#accordion" data-target="#collapse10">syntax</a> are processed automatically and moved into the share.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapse10">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse10">[TheSeeder] bot-syntax</a>
+                    </h4>
+                </div>
+                <div id="collapse10" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <ul>
+                            <p>
+                            <li>
+                                Syntax for <b>adding your url</b>: ?add url YOUR_URL <br/>
+                                <b>Example</b>: ?add url http://linkcrypt.ws/dir/123456789
+                            </li>
+                            </p>
+                            <p>
+                            <li>
+                                Syntax for <b>adding your magnets</b>: ?add magnet YOUR_MAGNET<br/>
+                                <b>Example</b>: ?add magnet magnet:?xt=urn:btih:DF49AC16CF9668B4DDF8A559D69A6B2D58568C9F&dn=lmgtfy+1+1+ipa&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337
+                            </li>
+                            </p>
+                            <p>
+                            <li>
+                                Syntax for <b>checking your magnets</b>: ?status magnet YOUR_MAGNET/HASH <br/>
+                                <b>Example</b>: ?status magnet DF49AC16CF9668B4DDF8A559D69A6B2D58568C9F
+                            </li>
+                            </p>
+                            <p>
+                            <li>
+                                Syntax for <b>displaying this syntax via PM</b>: ?help
+                            </li>
+                            </p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapse15">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse15">[TheSeederBot] online self service - aka 'the Bot'</a>
+                    </h4>
+                </div>
+                <div id="collapse15" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p><a class="tooltipped" data-position="left" data-delay="40"
+                           data-tooltip="torrent downloader" target="_blank" href="https://torrent.theseeder.ml">torrent</a>, Web UI to add and manage torrents, also utilized by sickrage and couchpotato</p>
+                        <p><a class="tooltipped" data-position="left" data-delay="40"
+                           data-tooltip="series automation" target="_blank" href="https://sickrage.theseeder.ml">sickrage</a>, Web UI to add and manage series (english-only)</p>
+                        <p><a class="tooltipped" data-position="left" data-delay="40"
+                           data-tooltip="movie automation" target="_blank" href="https://couchpotato.theseeder.ml">couchpotato</a>, Web UI to add and manage movies (english-only)</p>
+                        <p><a class="tooltipped" data-position="left" data-delay="40"
+                              data-tooltip="jdownloader web interface for links + dlc" target="_blank" href="https://my.jdownloader.org">jd</a>, Web UI to add and manage Link's and DLC from 1-click-hosters like Share-Online.biz or Uploaded.to</p>
+                        <p><a class="tooltipped" data-position="left" data-delay="40"
+                              data-tooltip="usenet downloader" target="_blank" href="https://nzbget.theseeder.ml">nzbget</a>, Web UI to add and manage usenet downloads, also utilized by sickrage</p>
+                        <p><a class="tooltipped" data-position="left" data-delay="40"
+                              data-tooltip="web file explorer for external user" target="_blank" href="https://share.theseeder.ml">share</a>, Web UI for external users to access the share</p>
+                        <p><a class="tooltipped" data-position="left" data-delay="40"
+                            data-tooltip="socks5 proxy ftw">proxy.theseeder.ml:13337</a>, socks5 proxy if the tu-proxy fails or performance is sluggish</p>
+                        <p><a class="tooltipped" data-position="left" data-delay="40"
+                              data-tooltip="web media streaming" target="_blank" href="https://plex.theseeder.ml:32400/web">plex</a>, Web UI to stream english-only series and movies</p>
+                        <p><a class="tooltipped" data-position="left" data-delay="40"
+                              data-tooltip="git web interface" target="_blank" href="https://git.theseeder.ml">git</a>, Web UI for the git server</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapse14">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse14">[TheSeederBot] username and password</a>
+                    </h4>
+                </div>
+                <div id="collapse14" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <ul>
+                            <li ng-repeat="row in infoVm.access.data track by $index">
+                                <span ng-bind-html="row | trust"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapse8">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse8">[TheSeederBot] new files</a>
+                    </h4>
+                </div>
+                <div id="collapse8" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>All new files will be logged in a NewFiles_TIMESTAMP.txt in "NewFiles".</p>
+                        <p>New series and movies are posted on <a target="_blank" href="https://twitter.com/TheSeederBot">Twitter</a> also</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapse12">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse12">[TheSeederBot] powered by</a>
+                    </h4>
+                </div>
+                <div id="collapse12" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>
+                        <ul class="centered">
+                            <li>website: openshift + angular + php + cloudflare</li>
+                            <li>node: proxmox + nginx + cloudflare + freifunk</li>
+                            <li>container on node: lxc, debian, ubuntu, nginx, utorrent, sickrage, couchpotato, nzbget, jdownloader2, splitbrain's Watcher, rhash, uhub, dante, ncdc, plex, gogs, own script's, let's encrypt, cloudflare</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapse11">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" data-target="#collapse11">[General] donations</a>
+                    </h4>
+                </div>
+                <div id="collapse11" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p>you can donate <a ui-sref="donate">here</a>, anything else is greatly appreciated, just PM me</p>
+                        <p>All donations will be used to buy new share-hoster accounts and upgrade servers for better performance and capacity.</p>
+                        <p>pending:</p>
+                        <ul>
+                            <li>nothing</li>
+                        </ul>
+                        <p>top donators:</p>
+                        <ul class="centered">
+                            <li>eVo13</li>
+                            <li>Käptn_Döner</li>
+                            <li>wasweisich</li>
+                            <li>external</li>
+                            <li>John</li>
+                            <li>Ehm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
